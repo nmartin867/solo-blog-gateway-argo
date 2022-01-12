@@ -15,5 +15,9 @@ spec:
     path: cfg
   destination:
     server: https://kubernetes.default.svc
-    namespace: default
- 
+    namespace: httpbin
+  # We're explicitly setting selfHeal to false (which is also the default) so we can use the
+  # Argo UI to more easily see the impact of incremental changes in our configuration.  
+  syncPolicy:
+    automated:
+      selfHeal: false 
