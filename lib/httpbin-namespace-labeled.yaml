@@ -3,7 +3,7 @@ kind: Namespace
 metadata:
   labels:
     discovery.solo.io/function_discovery: enabled
-  name: default
+  name: httpbin
 spec:
   finalizers:
   - kubernetes
