@@ -18,5 +18,5 @@ spec:
       routeAction:
         single:
           upstream:
-            name: default-httpbin-8000
+            name: httpbin-httpbin-8000
             namespace: gloo-system
