@@ -15,8 +15,5 @@ spec:
     server: https://kubernetes.default.svc
     namespace: gloo-system
   syncPolicy:
-    automated:
-      prune: false
-      selfHeal: false
     syncOptions:
       - CreateNamespace=true 
