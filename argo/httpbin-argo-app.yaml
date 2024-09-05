@@ -9,8 +9,8 @@ spec:
   project: default
   source:
     # Change repoURL to point to your clone of this repo
-    # repoURL: https://github.com/<my-profile-name>/solo-blog-edge-argo-15
-    repoURL: https://github.com/solo-io/solo-blog-edge-argo-15
+    # repoURL: https://github.com/<my-profile-name>/solo-blog-gateway-argo
+    repoURL: https://github.com/jameshbarton/solo-blog-gateway-argo
     targetRevision: HEAD
     path: cfg
   destination:
