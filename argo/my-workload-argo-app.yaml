@@ -1,0 +1,21 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: my-workload-app
+  namespace: argocd
+  finalizers:
+  - resources-finalizer.argocd.argoproj.io
+spec:
+  project: default
+  source:
+    # Change repoURL to point to your clone of this repo
+    # repoURL: https://github.com/<my-profile-name>/solo-blog-edge-argo-15
+    repoURL: https://github.com/solo-io/solo-blog-edge-argo-15
+    targetRevision: HEAD
+    path: cfg-my-workload
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: httpbin
+  # We're explicitly setting the syncPolicy to be empty, so we can use the
+  # Argo UI to more easily see the impact of incremental changes in our configuration.  
+  syncPolicy: {} 
