@@ -23,12 +23,9 @@ spec:
             disabled: true
             healthyPanicThreshold: 0
             gatewaySettings:
-              # Enable creation of the default Edge Gateway CRs
-              enabled: true
-              disableGeneratedGateways: false
               # Disable the default Edge Gateway CRs from being created
-              # enabled: false
-              # disableGeneratedGateways: true
+              enabled: false
+              disableGeneratedGateways: true
             service:
               type: ClusterIP
         gateway:

@@ -1,3 +1,3 @@
-# solo-blog-edge-argo-15
-For blog: From Zero to Gloo Edge in 15 Minutes: GitOps Edition
-http://www.solo.io/blog/from-zero-to-gloo-edge-in-15-minutes-gitops-edition
+# solo-blog-gateway-argo
+For blog: Hands-On with the Kubernetes Gateway API and Envoy Proxy: A 30-Minute GitOps Tutorial
+http://www.solo.io/blog/gateway-api-gitops-argo-tutorial-blog

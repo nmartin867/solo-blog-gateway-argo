@@ -12,7 +12,7 @@ spec:
     # repoURL: https://github.com/<my-profile-name>/solo-blog-gateway-argo
     repoURL: https://github.com/jameshbarton/solo-blog-gateway-argo
     targetRevision: HEAD
-    path: cfg
+    path: cfg-httpbin
   destination:
     server: https://kubernetes.default.svc
     namespace: httpbin
