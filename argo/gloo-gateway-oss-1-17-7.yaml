@@ -39,7 +39,6 @@ spec:
           # We don't need the discovery deployment for our Gloo Gateway demo
           enabled: false
     repoURL: https://storage.googleapis.com/solo-public-helm
-    # targetRevision: 1.18.0-beta14
     targetRevision: 1.17.7
   syncPolicy:
     automated:
