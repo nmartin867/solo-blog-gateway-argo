@@ -11,17 +11,21 @@ spec:
     - api.example.com
   rules:
     - matches:
-        # Switch from an Exact Matcher to a PathPrefix Matcher
         - path:
             type: PathPrefix
             value: /api/httpbin/
       filters:
-        # Replace the /api/httpbin matched prefix with /
         - type: URLRewrite
           urlRewrite:
             path:
               type: ReplacePrefixMatch
               replacePrefixMatch: /
+        # Add a Bearer token to supply a static API key when routing to backend system
+        - type: RequestHeaderModifier
+          requestHeaderModifier:
+            add:
+              - name: Authorization
+                value: Bearer my-api-key
       backendRefs:
         - name: httpbin
           port: 8000
