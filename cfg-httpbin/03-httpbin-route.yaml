@@ -10,7 +10,7 @@ spec:
     - name: http
       namespace: gloo-system
   hostnames:
-    - "api.example.com"
+    - "argo.nicknoob.com"
   rules:
   - matches:
     - path:
